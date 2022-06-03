@@ -7,14 +7,14 @@ setwd(wd)
 getwd()
 
 ## Import data
-df <- read_tsv("../puhe/data/cv-corpus-9.0-2022-04-27/fi/validated.tsv")
+tb <- read_tsv("../puhe/data/cv-corpus-9.0-2022-04-27/fi/validated.tsv")
 
 ## Unique values
-spec(df)
+spec(tb)
 
-unique(df$gender)
+unique(tb$gender)
 
-unique(df$age)
+unique(tb$age)
 
 ### Number of speakers
-length(unique(df$client_id))
+length(unique(tb$client_id))
