@@ -5,6 +5,7 @@ library(tidyverse)
 wd <- getwd() %>% str_replace("/scripts$", "")
 setwd(wd)
 getwd()
+rm(wd)
 
 ## Import data
 tb <- read_tsv("../puhe/data/cv-corpus-9.0-2022-04-27/fi/validated.tsv")
